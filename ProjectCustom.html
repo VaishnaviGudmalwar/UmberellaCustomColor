@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ProjectCustom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/regular.min.css" integrity="sha512-k2UAKyvfA7Xd/6FrOv5SG4Qr9h4p2oaeshXF99WO3zIpCsgTJ3YZELDK0gHdlJE5ls+Mbd5HL50b458z3meB/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        let imgchange=document.getElementById("imgCustom");
+        var imgBox=document.getElementById('imgBox');
+        var loadFile=function(event){
+            imgBox.style.backgroundImage="URL("+URL.createObjectURL(event.target.files)+")";
+        }
+        function circleOneClicked(){
+            document.body.style.backgroundColor="#ffe6e6";
+            btn.style.backgroundColor="brown";
+            // imgCustom.style.filter="gray(200%)";
+            imgchange.src="Pinkumbrella.png"
+        }
+        function circleTwoClicked(){
+            document.body.style.backgroundColor="#f2f2f2";
+            btn.style.backgroundColor="gray";
+            // imgCustom.style.backgroundColor="#A9A9A9";
+        }
+        function circleThreeClicked(){
+            document.body.style.backgroundColor="#f2f2f2";
+            btn.style.backgroundColor="black";
+            // imgCustom.style.backgroundColor="#A52A2A";
+        }
+        function circleFourClicked(){
+            document.body.style.backgroundColor="#ffe6f0";
+            btn.style.backgroundColor="pink";
+            // imgCustom.style.src="./Pink umbrella.png";
+        }
+        function circleFiveClicked(){
+            document.body.style.backgroundColor="#b3e6ff";
+            btn.style.backgroundColor="blue";
+            // imgCustom.style.backgroundColor="DeepPink";
+        }
+        function circleSixClicked(){
+            document.body.style.backgroundColor="#ffff99";
+            btn.style.backgroundColor="yellow";
+            // imgCustom.style.backgroundColor="#FFFF00";
+        }
+        function circleSevenClicked(){
+            document.body.style.backgroundColor="#ffebcc";
+            btn.style.backgroundColor="orange";
+            // imgCustom.style.backgroundColor="#FF4500";
+        }
+        function circleEightClicked(){
+            document.body.style.backgroundColor="#ffcccc";
+            btn.style.backgroundColor="red";
+            // imgCustom.style.backgroundColor="#FF0000";
+        }
+    </script> -->
+</head>
+<body>
+    <div class="Main-Product">
+        <div class="Main-Product-child-1-img" id="imgBox">
+            <img id="imgCustom" src="./Blueumbrella.png" alt="">
+        </div>
+        <div class="Main-Product-child-2-details">
+            <div class="Main-Product-child-2-details-child">
+            <h2 class="Main-Product-child-2-details-h2">Custom Umbrella</h2>
+            <div class="bullets">
+                <button class="Main-Product-child-2-details-color-bullets-circles circle1" onclick="circleOneClicked()"></button>
+                <button class="Main-Product-child-2-details-color-bullets-circles circle2" onclick="circleTwoClicked()"></button>
+                <button class="Main-Product-child-2-details-color-bullets-circles circle3" onclick="circleThreeClicked()"></button>
+                <button class="Main-Product-child-2-details-color-bullets-circles circle4" onclick="circleFourClicked()"></button>
+                <button class="Main-Product-child-2-details-color-bullets-circles circle5" onclick="circleFiveClicked()"></button>
+                <button class="Main-Product-child-2-details-color-bullets-circles circle6" onclick="circleSixClicked()"></button>
+                <button class="Main-Product-child-2-details-color-bullets-circles circle7" onclick="circleSevenClicked()"></button>
+                <button class="Main-Product-child-2-details-color-bullets-circles circle8"onclick="circleEightClicked()"></button>
+            </div>
+           <h6 class="Main-Product-child-2-details-h6">Customized your umbrella</h6>
+           <p class="Main-Product-child-2-details-p">Upload logo for an instant preview.
+            <br>
+            <span id="small">.png and .jpg files only. Max file size is 5MB</span>
+           </p>
+           <Button class="Main-Product-child-2-details-btn" id="btn">
+
+            <!-- <i class="fa-solid fa-upload" class="Main-Product-child-2-details-btn-icon"></i> -->
+            <!-- <img src="./upload_icon.svg" alt="" class="Main-Product-child-2-details-btn-icon"> -->
+            <input type="file" name="image" id="file" style="display: none;" accept="image/*" onchange="loadFile(event)">
+            <label for="file">
+                <i class="fa-solid fa-arrow-up-from-bracket" class="Main-Product-child-2-details-btn-icon"></i>
+                <!-- <img src="" alt="" class="upload-icon"> -->
+            <span id="text-btn">upload logo</span>
+        </label>
+    </div>
+           </div>
+        </div>
+        </div>
+    </div>
+    <script src="./ProjectCustom.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.Main-Product{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 550px;
+}
+.Main-Product-child-1-img{
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 550px;
+}
+.Main-Product-child-1-img>img{
+    width: 50%;
+}
+.Main-Product-child-2-details{
+    width: 30%;
+    height: 550px;
+      display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+.Main-Product-child-2-details-child{
+  margin-top: 60%;
+  width: 90%;
+  height: 450px;
+}
+.Main-Product-child-2-details-h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 42px;
+}
+.Main-Product-child-2-details-h6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+.Main-Product-child-2-details-p{
+    font-family:sans-serif;
+    padding-left: 20px;
+}
+#small{
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    font-size: 12px;
+}
+.Main-Product-child-2-details-btn{
+    width: 100%;
+    height: 50px;
+    font-family: 'Courier New';
+    font-size: 25px;
+    text-transform: uppercase;
+    background-color: dodgerblue;
+    border: none;
+    margin-top: 5%;
+    margin-left: 20px;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.Main-Product-child-2-details-btn-icon{
+    /* margin-left: 20px !important; */
+    color: #ffffff;
+    background-color: #ffffff;
+}
+/* #text-btn{
+    margin-right: 5%;
+} */
+.bullets{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Main-Product-child-2-details-color-bullets-circles{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+}
+.circle1{
+    background-color: #A52A2A;
+}
+.circle2{
+    background-color: #A9A9A9;
+}
+.circle3{
+    background-color:#000000;
+}
+.circle4{
+    background-color: DeepPink;
+}
+.circle5{
+    background-color: #1E90FF;
+}
+.circle6{
+    background-color: #FFFF00;
+}
+.circle7{
+    background-color: #FF4500;
+}
+.circle8{
+    background-color:#FF0000;
+}
